@@ -1,0 +1,18 @@
+package uwu;
+
+import java.io.*;
+import java.util.Scanner;
+
+public class Tester {
+	
+	public static void main(String[] args) throws IOException{
+		String a = System.in.read();
+	}
+	
+	/*
+	 * int contador = 0;
+		while(System.in.read() != '\n') contador++;
+		System.out.println();
+		System.out.println("Tecleados: " + contador + " caracteres");
+	 */
+}

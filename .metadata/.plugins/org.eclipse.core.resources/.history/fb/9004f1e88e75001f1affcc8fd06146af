@@ -1,0 +1,21 @@
+package consolaJava;
+
+public abstract class Revista extends Material {
+
+	int numero;
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	@Override
+	public void mostrarInfo() {
+		// TODO Auto-generated method stub
+		super.mostrarInfo();
+	}
+	
+}

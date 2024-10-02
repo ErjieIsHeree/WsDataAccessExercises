@@ -1,0 +1,19 @@
+package consolaJava;
+
+public abstract class DVDs extends Material{
+
+	String director;
+
+	public String getDirector() {
+		return director;
+	}
+	public void setDirector(String director) {
+		this.director = director;
+	}
+	@Override
+	public void mostrarInfo() {
+		// TODO Auto-generated method stub
+		super.mostrarInfo();
+	}
+	
+}

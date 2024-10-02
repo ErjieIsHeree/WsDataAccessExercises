@@ -1,0 +1,100 @@
+package consolaJava;
+
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class Biblioteca {
+
+	LinkedList<Material> listMateriales;
+
+	public Biblioteca(LinkedList<Material> listMateriales) {
+		super();
+		this.listMateriales = listMateriales;
+	}
+
+	public void addMaterial() {
+		Scanner sc = new Scanner(System.in);
+		int opcion = 0;
+		System.out.println();
+		System.out.println("Introduzca un número del 1-4 el material que desee introducir");
+		System.out.println("1.Libro");
+		System.out.println("2.Revista");
+		System.out.println("3.DVDs");
+		opcion = sc.nextInt();
+		switch (opcion) {
+		case 1:
+			listMateriales.add(crearLibro(sc));
+			break;
+		case 2:
+			listMateriales.add(crearRevista(sc));
+			break;
+		case 3:
+			listMateriales.add(crearDVDs(sc));
+			break;
+		case 4:
+			break;
+		default:
+			System.out.println("Esta opción no existe, elija otra.");
+		}
+	}
+	
+	public Libro crearLibro(Scanner sc) {
+		System.out.println("Introduzca el titulo del material");
+		String titulo = sc.nextLine();
+		System.out.println("Introduzca la fecha de publicación");
+		String anio = sc.nextLine();
+		System.out.println("Dime el autor del libro:");
+		String autor = sc.nextLine();
+		System.out.println("Dime el ISBN:");
+		String iSBN = sc.nextLine();
+		return new Libro(titulo, anio, autor, iSBN);
+	}
+	
+	public Revista crearRevista(Scanner sc) {
+		System.out.println("Introduzca el titulo del material");
+		String titulo = sc.nextLine();
+		System.out.println("Introduzca la fecha de publicación");
+		String anio = sc.nextLine();
+		System.out.println("Dime el número de la revista");
+		int numero = sc.nextInt();
+		return new Revista(titulo, anio, numero);
+	}
+	
+	public DVDs crearDVD(Scanner sc) {
+		System.out.println("Introduzca el titulo del material");
+		String titulo = sc.nextLine();
+		System.out.println("Introduzca la fecha de publicación");
+		String anio = sc.nextLine();
+		System.out.println("Dime en nombre del director del DVD:");
+		String director = sc.nextLine();
+		return new DVDs(titulo, anio, director);
+	}
+	
+	public void mostrarMateriales() {
+		System.out.println();
+		for (Material c : listMateriales) {
+			System.out.println((listMateriales.indexOf(c) + 1) + "."
+					+ c);
+		}
+	}
+
+	public void buscarMaterial(String cadenaMaterial) {
+		System.out.println();
+		boolean materialEncontrado = false;
+		try {
+			for (Material m : listMateriales) {
+				if (m.titulo.equalsIgnoreCase(cadenaMaterial)) {
+					m.mostrarInfo();
+					materialEncontrado = true;
+				}
+			}
+			if (!materialEncontrado) {
+				throw new Exception("MaterialNoEncontradoException");
+			}
+		} catch (Exception MaterialNoEncontradoException) {
+			System.out.println("MaterialNoEncontradoException");
+		}
+	}
+	
+	
+}

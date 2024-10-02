@@ -1,0 +1,35 @@
+package consolaJava;
+
+import java.util.Scanner;
+
+public class Libro extends Material {
+	
+	String autor;
+	String iSBN;
+	
+	public Libro(String titulo, int anioPublicacion, String autor, String iSBN) {
+		super(titulo, anioPublicacion);
+		this.autor = autor;
+		this.iSBN = iSBN;
+	}
+	public String getAutor() {
+		return autor;
+	}
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+	public String getISBN() {
+		return iSBN;
+	}
+	public void setISBN(String iSBN) {
+		Scanner sc = new Scanner(System.in);
+		while (iSBN.length() != 6) {
+			System.out.println("El ISBN debe ser de 6 números");
+			iSBN = sc.nextLine();
+		}
+		iSBN = iSBN;
+	}
+
+	
+	
+}

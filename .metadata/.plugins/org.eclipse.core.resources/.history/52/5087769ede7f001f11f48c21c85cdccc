@@ -1,0 +1,19 @@
+package uwu;
+
+import java.io.*;
+import java.util.Scanner;
+
+public class Tester {
+	
+	public static void main(String[] args) throws IOException{
+		File ficrot = new File("C:\\Users\\Erjie\\Desktop\\DAM\\a.txt")
+		FileOutputStream FOS = new FileOoutputStream(File ficrot,boolean append);
+	}
+	
+	/*
+	 * int contador = 0;
+		while(System.in.read() != '\n') contador++;
+		System.out.println();
+		System.out.println("Tecleados: " + contador + " caracteres");
+	 */
+}

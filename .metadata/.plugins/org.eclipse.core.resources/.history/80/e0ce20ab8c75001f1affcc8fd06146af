@@ -1,0 +1,40 @@
+package consolaJava;
+
+import java.util.LinkedList;
+
+public class Biblioteca {
+
+	LinkedList<Material> listMateriales;
+	
+	public Biblioteca(LinkedList<Material> listMateriales) {
+		super();
+		this.listMateriales = listMateriales;
+	}
+
+	public void addMaterial(Material material) {
+		listMateriales.add(material);
+	}
+	
+	public void mostrarMateriales() {
+		for (Material c : listMateriales) {
+			System.out.println((listMateriales.indexOf(c) + 1) + "."
+					+ c);
+		}
+	}
+
+	public void buscarMaterial(String cadenaMaterial) {
+		boolean materialEncontrado = false;
+		try {
+			for (Material m : listMateriales) {
+				if (m.titulo.equalsIgnoreCase(cadenaMaterial)) {
+					m.mostrarInfo();
+					materialEncontrado = true;
+				}
+			}
+		} catch (Exception MaterialNoEncontradoException) {
+			System.out.println("MaterialNoEncontradoException");
+		}
+	}
+	
+	
+}

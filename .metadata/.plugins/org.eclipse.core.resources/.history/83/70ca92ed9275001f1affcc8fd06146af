@@ -1,0 +1,18 @@
+package consolaJava;
+
+public class DVDs extends Material{
+
+	String director;
+	
+	public DVDs(String titulo, int anioPublicacion, String director) {
+		super(titulo, anioPublicacion);
+		this.director = director;
+	}
+	public String getDirector() {
+		return director;
+	}
+	public void setDirector(String director) {
+		this.director = director;
+	}
+	
+}

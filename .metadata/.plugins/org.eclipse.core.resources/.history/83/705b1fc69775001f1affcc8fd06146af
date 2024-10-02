@@ -1,0 +1,62 @@
+package consolaJava;
+
+import java.util.LinkedList;
+
+public class Biblioteca {
+
+	LinkedList<Material> listMateriales;
+
+	public Biblioteca(LinkedList<Material> listMateriales) {
+		super();
+		this.listMateriales = listMateriales;
+	}
+
+	public void addMaterial() {
+		int opcion = 0;
+		
+		do {
+			System.out.println("Introduzca un número del 1-4 el material que desee introducir");
+			switch (opcion) {
+			case 1:
+				listMateriales.add(new Libro(null, opcion, null, null));
+				break;
+			case 2:
+				listMateriales.add(new Revista(null, opcion, opcion));
+				break;
+			case 3:
+				listMateriales.add(new DVDs(null, opcion, null));
+				break;
+			case 4:
+				break;
+			default:
+				System.out.println("Esta opción no existe, elija otra.");
+			}
+		} while (opcion != 4);
+	}
+	
+	public void mostrarMateriales() {
+		for (Material c : listMateriales) {
+			System.out.println((listMateriales.indexOf(c) + 1) + "."
+					+ c);
+		}
+	}
+
+	public void buscarMaterial(String cadenaMaterial) {
+		boolean materialEncontrado = false;
+		try {
+			for (Material m : listMateriales) {
+				if (m.titulo.equalsIgnoreCase(cadenaMaterial)) {
+					m.mostrarInfo();
+					materialEncontrado = true;
+				}
+			}
+			if (!materialEncontrado) {
+				throw new Exception("MaterialNoEncontradoException");
+			}
+		} catch (Exception MaterialNoEncontradoException) {
+			System.out.println("MaterialNoEncontradoException");
+		}
+	}
+	
+	
+}

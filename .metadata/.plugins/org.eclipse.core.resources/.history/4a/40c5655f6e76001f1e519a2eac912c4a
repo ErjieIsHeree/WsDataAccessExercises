@@ -1,0 +1,9 @@
+package consolaJava;
+
+public class ExceptionMaterialNoEncontrado extends Exception {
+	private static final long serialVersionUID = 1L;
+	
+	public ExceptionMaterialNoEncontrado(String informacion) {
+		super (informacion);
+	}
+}
