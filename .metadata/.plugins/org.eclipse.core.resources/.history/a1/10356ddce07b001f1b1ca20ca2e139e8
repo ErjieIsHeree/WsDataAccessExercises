@@ -1,9 +1,0 @@
-package methods;
-
-public class Menu {
-	
-	private static void selMen() {
-		
-	}
-
-}
