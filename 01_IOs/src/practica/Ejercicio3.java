@@ -34,8 +34,8 @@ public class Ejercicio3 {
 	 * Se creara un fichero con el nombre y tendra de contenido las cadenas de
 	 * caracteres del array. Cada cadena sera una linea en el fichero y cada espacio
 	 * que hay entre las cadenas, se convertiran en asteriscos.
-	 * Este fichero sera <i>".txt"</i> y se encontrara en la ruta:
-	 * <i>"C:\\Users\\Erjie\\Desktop\\DAM\\cositas"</i>
+	 * El fichero se encontrara en la ruta:
+	 * <i>"C:\\Users\\Erjie\\Desktop\\DAM\\cositas\\"</i>
 	 * 
 	 * <b>Exceptions</b>
 	 * 1.<i>FileNotFoundException</i>. Si el programa no localiza el fichero en

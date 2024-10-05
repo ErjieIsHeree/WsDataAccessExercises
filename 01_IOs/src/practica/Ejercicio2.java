@@ -25,12 +25,12 @@ public class Ejercicio2 {
 		}
 		System.out.println("Programa cerrado");
 	}
-	
+
 	/**El siguiente metodo craera un fichero cuyo nombre se dara por parametro y
 	 * en ella se almacenara una serie de numeros que el usuario desee
 	 * introducir. Y este imprimira su suma por consola y lo añadira al fichero.
-	 * Este fichero será <i>".txt"</i> y se creará en la siguiente ruta:
-	 * <i>"C:\\Users\\Erjie\\Desktop\\DAM\\cositas"</i>
+	 * El fichero se encontrara en la ruta:
+	 * <i>"C:\\Users\\Erjie\\Desktop\\DAM\\cositas\\"</i>
 	 * 
 	 * <b>Exceptions</b>
 	 * 1.<i>FileNotFoundException</i>. Si el programa no localiza el fichero en

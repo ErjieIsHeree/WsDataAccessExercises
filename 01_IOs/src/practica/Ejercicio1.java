@@ -32,7 +32,7 @@ public class Ejercicio1 {
 	 * 2.<i>IOException</i>. Se lanza cuando ocurre algún problema del paquete
 	 * IO.
 	 */
-	public static void yi() {
+	private static void yi() {
 		FileWriter fileWr = null;
 		try {
 			fileWr = new FileWriter("C:\\Users\\Erjie\\Desktop\\DAM\\cositas\\"
