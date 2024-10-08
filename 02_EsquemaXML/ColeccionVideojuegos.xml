@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Videojuegos xmlns:tns="http://www.example.org/ColeccionVideojuegos" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/ColeccionVideojuegos ColeccionVideojuegos.xsd ">
+  <tns:videojuego titulo="Wu Kong">
+  	<tns:desarrollador>Erjie</tns:desarrollador>
+  	<tns:plataforma>PC</tns:plataforma>
+  	<tns:anioLanzamiento>2024</tns:anioLanzamiento>
+  	<tns:PEGI>18</tns:PEGI>
+  	<tns:copiasDisponibles>10000000</tns:copiasDisponibles>
+  </tns:videojuego>
+</tns:Videojuegos>

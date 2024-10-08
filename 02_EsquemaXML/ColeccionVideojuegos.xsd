@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ColeccionVideojuegos" xmlns:tns="http://www.example.org/ColeccionVideojuegos" elementFormDefault="qualified">
+
+    <element name="Videojuegos" type="tns:videojuegos"></element>
+
+    <complexType name="videojuego">
+    	<sequence>
+    		<element name="desarrollador" type="string" maxOccurs="unbounded" minOccurs="1"></element>
+    		<element name="plataforma" type="string" maxOccurs="unbounded" minOccurs="1"></element>
+    		<element name="genero" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+    		<element name="anioLanzamiento" type="int" maxOccurs="1" minOccurs="1"></element>
+    		<element name="PEGI" type="int" maxOccurs="1" minOccurs="1"></element>
+    		<element name="copiasDisponibles" type="int" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    	<attribute name="titulo" type="string"></attribute>
+    </complexType>
+
+    <complexType name="videojuegos">
+    	<sequence>
+    		<element name="videojuego" type="tns:videojuego"></element>
+    	</sequence>
+    </complexType>
+</schema>

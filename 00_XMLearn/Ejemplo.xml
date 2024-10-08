@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Biblioteca xmlns:tns="http://www.example.org/NewXMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/NewXMLSchema Ejemplo.xsd ">
+	<tns:libro titulo="Harry Potter">
+		<tns:autor>Erjie</tns:autor>
+		<tns:anio>2024</tns:anio>
+	</tns:libro>
+	<tns:libro titulo="Anime">
+		<tns:autor>Erjie</tns:autor>
+		<tns:anio>2004</tns:anio>
+	</tns:libro>
+</tns:Biblioteca>

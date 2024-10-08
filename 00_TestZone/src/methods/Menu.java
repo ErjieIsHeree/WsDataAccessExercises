@@ -20,7 +20,8 @@ public class Menu {
 				optCor = true;
 			}
 			catch (Exception e) {
-				System.out.println("La opción debe ser un número de las que el menú muestre");
+				System.out.println("La opción debe ser un número de las que el "
+						+ "menú muestre");
 			}
 		} while (!optCor);
 		return opt;

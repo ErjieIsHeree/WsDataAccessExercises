@@ -19,8 +19,8 @@ public class Ejercicio5 {
 			System.out.println("Introduce el mes en formato numerico:\r\n"
 					+ "1 (Enero), 2 (Febrero), 3 (Marzo)... 12 (Diciembre)");
 			int numMes = sc.nextInt();
-			System.out.println("Introduce la inicial del dia de la semana que sea"
-					+ " el primer dia del mes:\r\n"
+			System.out.println("Introduce la inicial del dia de la semana que "
+					+ "sea el primer dia del mes:\r\n"
 					+ "L (Lunes), M (Martes), X (Miercoles), J (Jueves)...");
 			sc.nextLine();
 			String diaSemana = sc.nextLine();
@@ -32,17 +32,19 @@ public class Ejercicio5 {
 	
 	/**
 	 * El siguiente metodo recogera por parametros el <i>"numMes"</i> y el
-	 * <i>"diaSemana"</i>. El mes se usara para crear el nombre de un fichero cuyo
-	 * nombre sera <i>mes"numeroDeMes".txt</i>, en el se incluiran los dias que tenga el
-	 * mes y al lado de cada dia se le aniadira el dia de la semana, de tal forma que
-	 * quedaria asi:
+	 * <i>"diaSemana"</i>. El mes se usara para crear el nombre de un fichero
+	 * cuyo nombre sera <i>mes"numeroDeMes".txt</i>, en el se incluiran los dias
+	 * que tenga el mes y al lado de cada dia se le aniadira el dia de la
+	 * semana, de tal forma que quedaria asi:
 	 * 1X2J3V4S6D... 31L
 	 * El fichero se encontrara en la ruta:
 	 * <i>"C:\\Users\\Erjie\\Desktop\\DAM\\cositas"</i>
 	 * 
 	 * 
-	 * @param numMes valor del 1 al 12 que se volvera a pedir en caso de que no sea asi.
-	 * @param semana valores (L, M, X, J, V, S, D)que se volvera a pedir en caso de que no sea asi.
+	 * @param numMes valor del 1 al 12 que se volvera a pedir en caso de que no 
+	 * sea asi.
+	 * @param semana valores (L, M, X, J, V, S, D)que se volvera a pedir en
+	 * caso de que no sea asi.
 	 */
 	private static void calendario(int numMes, String diaSemana) {
 		Scanner sc = new Scanner(System.in);
@@ -79,14 +81,17 @@ public class Ejercicio5 {
 		int diaSem = 0;
 		do {
 			for (String c : lisSem) {
-				//Comprueba que la letra introducida concuerde con algun dia semanal
+				//Comprueba que la letra introducida concuerde con algun dia
+				//semanal
 				if (c.equalsIgnoreCase(diaSemana)) {
 					semCor = true;
 				}
 			}
 			if (!semCor) {
-				System.out.println("Introduzca la incial de la semana existente:\r\n"
-						+ "(L = lunes, M = martes, X = Miercoles, J = Jueves, V = Viernes, "
+				System.out.println("Introduzca la incial de la semana existent"
+						+ "e:\r\n"
+						+ "(L = lunes, M = martes, X = Miercoles, J = Jueves,"
+						+ " V = Viernes, "
 						+ "S = Sabado, D = Domingo)");
 				diaSemana = sc.nextLine();
 			}
@@ -110,9 +115,11 @@ public class Ejercicio5 {
 		}
 		
 		//Trabajo sobre el fichero
-		String filRot = "C:\\Users\\Erjie\\OneDrive\\Escritorio\\DAM\\cositas\\mes"+ numMes +".txt";
+		String filRot = "C:\\Users\\Erjie\\OneDrive\\Escritorio\\DAM\\cositas\\"
+				+ "mes"+ numMes +".txt";
 		try {
-			BufferedWriter bufWri = new BufferedWriter(new FileWriter(filRot, false));
+			BufferedWriter bufWri = new BufferedWriter(new FileWriter(filRot, 
+					false));
 			bufWri.write("");
 			bufWri.close();
 		}
@@ -123,7 +130,8 @@ public class Ejercicio5 {
 				e.printStackTrace();
 		}
 		try {
-			BufferedWriter bufWri = new BufferedWriter(new FileWriter(filRot, true));
+			BufferedWriter bufWri = new BufferedWriter(new FileWriter(filRot, 
+					true));
 			for (int i = 1; i <= tipoMes; i++) {
 				bufWri.write(i + lisSem.get(diaSem++));
 				if (diaSem == 7) {
