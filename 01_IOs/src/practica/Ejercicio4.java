@@ -49,5 +49,4 @@ public class Ejercicio4 {
 			e.printStackTrace();
 		}
 	}
-
 }
