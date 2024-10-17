@@ -3,6 +3,7 @@ package methods;
 import java.util.Scanner;
 
 public class Menu {
+	@SuppressWarnings("unused")
 	private static int selMen(int canOpc) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduzca la opción que desee:");
@@ -24,6 +25,7 @@ public class Menu {
 						+ "menú muestre");
 			}
 		} while (!optCor);
+		sc.close();
 		return opt;
 	}
 }

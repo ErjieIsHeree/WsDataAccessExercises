@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ColeccionVideojuegos" xmlns:tns="http://www.example.org/ColeccionVideojuegos" elementFormDefault="qualified">
 
-    <element name="Videojuegos" type="tns:videojuegos"></element>
+    <element name="ColeccionVideojuegos" type="tns:videojuegos"></element>
 
     <complexType name="videojuego">
     	<sequence>
@@ -17,7 +17,7 @@
 
     <complexType name="videojuegos">
     	<sequence>
-    		<element name="videojuego" type="tns:videojuego"></element>
+    		<element name="videojuego" type="tns:videojuego" maxOccurs="unbounded" minOccurs="0"></element>
     	</sequence>
     </complexType>
 </schema>

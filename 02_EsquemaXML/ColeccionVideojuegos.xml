@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tns:Videojuegos xmlns:tns="http://www.example.org/ColeccionVideojuegos" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/ColeccionVideojuegos ColeccionVideojuegos.xsd ">
-  <tns:videojuego titulo="Wu Kong">
-  	<tns:desarrollador>Erjie</tns:desarrollador>
-  	<tns:plataforma>PC</tns:plataforma>
-  	<tns:anioLanzamiento>2024</tns:anioLanzamiento>
-  	<tns:PEGI>18</tns:PEGI>
-  	<tns:copiasDisponibles>10000000</tns:copiasDisponibles>
-  </tns:videojuego>
-</tns:Videojuegos>
+<tns:ColeccionVideojuegos xmlns:tns="http://www.example.org/ColeccionVideojuegos" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/ColeccionVideojuegos ColeccionVideojuegos.xsd ">
+	<tns:videojuego titulo="Wu Kong">
+		<tns:desarrollador>Erjie Xia</tns:desarrollador>
+		<tns:plataforma>PC, PS5, XBOX SERIES X</tns:plataforma>
+		<tns:anioLanzamiento>2024</tns:anioLanzamiento>
+		<tns:PEGI>16</tns:PEGI>
+		<tns:copiasDisponibles>1000000</tns:copiasDisponibles>
+	</tns:videojuego>
+	<tns:videojuego titulo="Among Us">
+		<tns:desarrollador>Erjie Xia</tns:desarrollador>
+		<tns:plataforma>Movil, PC</tns:plataforma>
+		<tns:anioLanzamiento>2016</tns:anioLanzamiento>
+		<tns:PEGI>12</tns:PEGI>
+		<tns:copiasDisponibles>9999999</tns:copiasDisponibles>
+	</tns:videojuego>
+	<tns:videojuego titulo="Dress to Impress">
+		<tns:desarrollador>Ana Gomez</tns:desarrollador>
+		<tns:plataforma>PC, MOVIL, PS5, XBOX SERIES X</tns:plataforma>
+		<tns:anioLanzamiento>2014</tns:anioLanzamiento>
+		<tns:PEGI>9</tns:PEGI>
+		<tns:copiasDisponibles>99999999</tns:copiasDisponibles>
+	</tns:videojuego>
+	<tns:videojuego titulo="Pou">
+		<tns:desarrollador>Eduardo Franco</tns:desarrollador>
+		<tns:plataforma>MOVIL</tns:plataforma>
+		<tns:anioLanzamiento>2009</tns:anioLanzamiento>
+		<tns:PEGI>4</tns:PEGI>
+		<tns:copiasDisponibles>999999999</tns:copiasDisponibles>
+	</tns:videojuego>
+	<tns:videojuego titulo="Minecraft">
+		<tns:desarrollador>Camila Sanchez</tns:desarrollador>
+		<tns:plataforma>PC, PS5, XBOX SERIES, MOVIL</tns:plataforma>
+		<tns:anioLanzamiento>2002</tns:anioLanzamiento>
+		<tns:PEGI>12</tns:PEGI>
+		<tns:copiasDisponibles>999999999</tns:copiasDisponibles>
+	</tns:videojuego></tns:ColeccionVideojuegos>
