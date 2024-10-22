@@ -17,11 +17,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 //PC: "C:\Users\Erjie\OneDrive\Escritorio\DAM\WsDataAccessExercises\02_EsquemaXML\ColeccionVideojuegos.xml"
+//Portatil: ""C:\Users\Erjie\Desktop\DAM\02_SecondYear\1.AccesoDeDatos\2.Ejercicios\WsEjercicios\02_EsquemaXML\ColeccionVideojuegos.xml""
 
 public class ColeccionVideojuegos {
 	
 	public static void main(String[] args) {
-		File coleccionVideojuegosXML = new File("C:\\Users\\Erjie\\OneDrive\\Escritorio\\DAM\\WsDataAccessExercises\\02_EsquemaXML\\ColeccionVideojuegos.xml");
+		File coleccionVideojuegosXML = new File("C:\\Users\\Erjie\\Desktop\\DAM\\02_SecondYear\\1.AccesoDeDatos\\2.Ejercicios\\WsEjercicios\\02_EsquemaXML\\ColeccionVideojuegos.xml");
 		Scanner sc = new Scanner(System.in);
 		Document arbolDOM = deXmlADom(coleccionVideojuegosXML);
 		
@@ -276,7 +277,7 @@ public class ColeccionVideojuegos {
 	 * @param archivo nombre del archivo a crear
 	 */
 	public static void guardarXML(Document doc, String archivo) {
-		String rutaFichero = "C:\\Users\\Erjie\\OneDrive\\Escritorio\\DAM\\WsDataAccessExercises\\02_EsquemaXML\\" + archivo + ".xml";
+		String rutaFichero = "C:\\Users\\Erjie\\Desktop\\DAM\\02_SecondYear\\1.AccesoDeDatos\\2.Ejercicios\\WsEjercicios\\02_EsquemaXML\\" + archivo + ".xml";
 		TransformerFactory fabricaTransformador = null;
 		Transformer transformador = null;
 		StreamResult resultado = null;
