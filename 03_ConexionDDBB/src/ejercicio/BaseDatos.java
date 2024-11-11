@@ -14,7 +14,7 @@ public class BaseDatos {
 		return DriverManager.getConnection(url, nombre, contra);
 	}
 	
-	public static void OperacionesLibro() {
+	public static void operacionesLibro() {
 		int eleccion = menuOperacionesDe("libro");
 		
 		switch (eleccion) {
@@ -36,7 +36,7 @@ public class BaseDatos {
 		
 	}
 	
-	public static void OperacionesSocio() {
+	public static void operacionesSocio() {
 		int eleccion = menuOperacionesDe("socio");
 		
 		switch (eleccion) {
@@ -60,7 +60,7 @@ public class BaseDatos {
 		}
 		
 	}
-	
+
 	private static void darDeAlta(int tipo) {
 		Connection conn = null;
 		try {
@@ -334,7 +334,7 @@ public class BaseDatos {
 		}
 	}
 	
-	public static void ConsultasPrestamo() {
+	public static void consultasPrestamo() {
 		int eleccion = menuConsultaPrestamo();
 		
 		switch(eleccion) {
