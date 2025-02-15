@@ -41,18 +41,17 @@ public class Ejercicio1 {
 				fileWr.write(i + " ");
 			}
 		}
-		catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
 		catch (IOException e) {
 			e.printStackTrace();
+		} finally {
+			try {
+				fileWr.close();
+			}
+			catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
-		try {
-			fileWr.close();
-		}
-		catch (IOException e) {
-			e.printStackTrace();
-		}
+		
 		System.out.println("Fichero creado.");
 	}
 
